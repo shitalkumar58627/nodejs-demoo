@@ -17,10 +17,10 @@ phases:
       - ng build 
   post_build:
      commands:
-      - aws s3 cp dist s3://codedeployangular/ --recursive
+      - aws s3 cp dist s3://kumard4555/ --recursive
       - echo Build completed on `date`
 artifacts:
   files:
       - '**/*'
   base-directory: 'dist*'
-discard-paths: yes
+discard-paths: no
